@@ -19,20 +19,20 @@ go build -ldflags="-w -s" -o pssh main.go
 ## 使用
 ```bash
 pssh -h 
-  add         add host to database.
+  add         Add host to database.
   del         Delete a host from the database
   help        Help about any command
   list        List all the hosts in the database
-  login       login to host
+  login       Login to host
   init        Initialize the database
   version     Print the version number of pssh
 ```
 #### 命令说明
---init: 初始化数据库，创建存储主机的表`hosts`
---add: 添加主机到数据库，参数依次为`name、ip、port、user、password`
---del : 删除主机,可以是主机名，也可以是ip
-list: 显示数据库中所有主机
-login: 登录主机
+- --init: 初始化数据库，创建存储主机的表`hosts`
+- --add: 添加主机到数据库，参数依次为`name、ip、port、user、password`
+- --del : 删除主机,可以是主机名，也可以是ip
+- list: 显示数据库中所有主机
+- login: 登录主机
 #### 示例
 ```bash
 # 添加主机，参数为名称、ip、端口、用户名、密码
